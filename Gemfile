@@ -14,6 +14,7 @@ gem 'httparty'
 gem 'rails-api'
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+gem 'rack-cors'
 
 group :development, :test do
   gem 'byebug'

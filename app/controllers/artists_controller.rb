@@ -6,7 +6,7 @@ class ArtistsController < ApplicationController
 	end
 
 	def show
-		@albums = Artist.find(params[:id]).albums
+		@albums = {"artist": Artist.find(params[:id]),"albums": Artist.find(params[:id]).albums}
 		render json: @albums
 	end
 end
