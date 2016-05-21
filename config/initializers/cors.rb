@@ -8,7 +8,7 @@
      origins 'simple-rails-api.herokuapp.com'
 
      resource '*',
-       headers: 'Access-Control-Allow-Origin',
+       headers: :any,
        methods: [:get, :post, :put, :patch, :delete, :options, :head]
    end
  end
